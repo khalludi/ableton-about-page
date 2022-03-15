@@ -17,6 +17,16 @@ footer a {
 a:hover {
   text-decoration: underline;
 }
+body {
+  background-color: rgb(241, 241, 241);
+}
+#centerContainer {
+  position: relative;
+  max-width: 1463px;
+  margin: 0px auto;
+  background-color: white;
+  z-index: -20;
+}
 
 nav {
   display: flex;
@@ -76,7 +86,7 @@ nav {
 .header-img {
   object-fit: cover;
   height: calc(100vh - 1.6rem - 100px);
-  width: 85vw;
+  width: calc(min(85vw, 1463px * 0.85));
 
   display: block;
   margin: auto;
@@ -311,7 +321,7 @@ nav {
 }
 
 footer {
-  margin: 7rem;
+  padding: 7rem;
 }
 footer li {
   font-size: 1rem;
