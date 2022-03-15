@@ -186,15 +186,15 @@ nav {
 
 .green-section {
   position: relative;
-  height: calc(100vw * 0.75);
-  width: calc(100vw - 15px);
+  height: calc(min(100vw, var(--max-width)) * 0.75);
+  width: calc(min(100vw, var(--max-width)) - 15px);
 }
 .green-section::before {
   position: absolute;
   content: "";
   display: inline-block;
   height: inherit;
-  width: calc(100vw * 0.58);
+  width: calc(min(100vw, var(--max-width)) * 0.58);
   z-index: -10;
   background-color: rgb(175, 255, 200);
 }
@@ -203,7 +203,7 @@ nav {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr 1fr 2fr 1fr 2fr 1fr 1fr;
 
-  width: calc(100vw - 15px);
+  width: calc(min(100vw, var(--max-width)) - 15px);
   height: inherit;
   z-index: 10;
 }
@@ -240,19 +240,19 @@ nav {
 
 .img-tech {
   display: block;
-  width: 80vw;
+  width: calc(min(80vw, var(--max-width) * 0.8));
   margin: auto;
 }
 
 .purple-section {
-  height: calc(100vw * 0.6);
-  width: calc(100vw - 15px);
+  height: calc(min(100vw, var(--max-width)) * 0.6);
+  width: calc(min(100vw, var(--max-width)) - 15px);
 }
 .purple-section::before {
   content: "";
   display: inline-block;
-  height: calc(100vw * 0.6);
-  width: calc(100vw * 0.7);
+  height: calc(min(100vw, var(--max-width)) * 0.6);
+  width: calc(min(100vw, var(--max-width)) * 0.7);
   background-color: rgb(207, 170, 255);
 
   position: absolute;
@@ -265,7 +265,7 @@ nav {
   grid-template-rows: repeat(7, 1fr);
 
   height: inherit;
-  width: calc(100vw - 15px);
+  width: calc(min(100vw, var(--max-width)) - 15px);
   z-index: 10;
 }
 .photo6 {
@@ -294,15 +294,15 @@ nav {
   padding-left: 8%;
   padding-right: 8%;
 
-  height: calc(100vw * 0.4);
-  width: calc(100vw - 15px);
+  height: calc(min(100vw, var(--max-width)) * 0.4);
+  width: calc(min(100vw, var(--max-width)) - 15px);
 
   padding-bottom: 7rem;
   border-bottom: 2px solid #eff4f4;
 }
 .job-group {
   background-color: rgb(168, 189, 255);
-  width: calc(100vw * 0.8);
+  width: calc(min(100vw, var(--max-width)) * 0.8);
 
   display: flex;
   flex-direction: column;
@@ -319,7 +319,7 @@ nav {
   color: blue;
 }
 .photo8 {
-  max-height: calc(100vw * 0.4);
+  max-height: calc(min(100vw, var(--max-width)) * 0.4);
   max-width: 50%;
   object-fit: cover;
 }
