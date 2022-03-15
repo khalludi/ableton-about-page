@@ -127,6 +127,27 @@ nav {
   font-weight: 500;
   color: blue;
 }
+@media (max-width: 1332px) {
+  .text-section {
+    margin: 7rem 12rem;
+  }
+}
+@media (max-width: 1171px) {
+  .text-section {
+    margin: 7rem 9rem;
+  }
+  .text-section h3 {
+    font-size: 1.25rem;
+  }
+  .text-section p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 714px) {
+  .text-section {
+    margin: 7rem calc(100vw * 0.08);
+  }
+}
 
 .yellow-section {
   height: calc(min(100vw, var(--max-width)) * 0.6);
