@@ -3,14 +3,15 @@
     <title>Ableton About</title>
     <link rel="stylesheet" href="https://use.typekit.net/qqy0bik.css">
     <link rel="stylesheet" href="styles.css"/>
+    <script src="script.js"></script>
   </head>
   <body>
     <div id="centerContainer">
       <!-- Nav bar -->
       <nav>
-        <img class="logo" src="assets/ableton-logo.png"><a href="#"></a></img>
+        <img class="logo" src="assets/ableton-logo.png"><a href='#'></a></img>
         
-        <div class="nav-flex">
+        <div class="nav-flex" id="myTopnav">
           <a class="nav-link" href="#">Live</a>
           <a class="nav-link" href="#">Push</a>
           <a class="nav-link" href="#">Link</a>
@@ -20,6 +21,20 @@
           <a class="nav-link nav-more" href="#">More +</a>
           <a class="nav-link nav-live" href="#">Try Live for free</a>
           <a class="nav-link nav-login" href="#">Log in or register</a>
+          <a class="nav-link nav-menu" href="javascript:void(0);" onclick="myFunction()">
+            Menu
+          </a>
+        </div>
+
+        <div class="nav-dropdown" id="navDropdown">
+          <div class="nav-dropdown-flex">
+            <a class="nav-link" href="#">Live</a>
+            <a class="nav-link" href="#">Push</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Shop</a>
+            <a class="nav-link" href="#">Packs</a>
+            <a class="nav-link" href="#">Help</a>
+          </div>
         </div>
       </nav>
 

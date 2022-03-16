@@ -29,7 +29,7 @@ body {
   max-width: var(--max-width);
   margin: 0px auto;
   background-color: white;
-  z-index: -20;
+  z-index: 1;
 }
 
 nav {
@@ -67,6 +67,56 @@ nav {
   padding-left: 0px;
   padding-top: 2px;
 }
+.nav-menu {
+  display: none;
+}
+.nav-dropdown {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .nav-flex a:not(:last-child) {
+    display: none;
+  }
+  .nav-menu {
+    display: block;
+  }
+  .nav-menu::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #000;
+
+    margin-left: 10px;
+  }
+
+  nav {
+    position: relative;
+  }
+  .nav-show {
+    display: block;
+  }
+  .nav-dropdown-flex {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: blue;
+  }
+  .logo-white {
+    filter: invert(100%);
+    z-index: 10;
+  }
+  .nav-menu-open {
+    color: white;
+    z-index: 10;
+  }
+}
+
 
 .nav2 {
   display: flex;
