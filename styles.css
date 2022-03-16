@@ -465,7 +465,6 @@ nav {
   }
 }
 
-
 footer {
   padding: 7rem;
 }
@@ -598,11 +597,45 @@ select:focus + .focus {
   margin-top: 2rem;
 }
 .ft-flex li {
+  position: relative;
   font-size: 0.875rem;
+}
+#ft-berlin {
+  top: 0px;
 }
 #ft-grow {
   flex-grow: 1;
 }
 .ft-logo {
   width: 3rem;
+}
+.ft2-logo {
+  width: 3rem;
+}
+.ft2-logo-wide {
+  display: none;
+}
+@media (max-width: 1023px) {
+  .ft-flex {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+  #ft-grow {
+    flex-grow: unset;
+    padding-bottom: 5em;
+  }
+  .ft2-logo {
+    display: none;
+  }
+  .ft2-logo-wide {
+    width: 3rem;
+    display: block;
+    margin-left: 0.15em;
+    margin-right: 0.8em;
+  }
+  #ft-side-float {
+    display: flex;
+    gap: 0.5em;
+  }
 }
